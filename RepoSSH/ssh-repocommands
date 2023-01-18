@@ -1,0 +1,36 @@
+ 1009  cd RepoSSH
+ 1010  ls
+ 1011  vi READ.md
+ 1012  vi index.html
+ 1013  open index.html
+ 1014  ls
+ 1015  git status
+ 1016  git add .
+ 1017  git status
+ 1018  git commit -m 'first commit READ.md' READ.md
+ 1019  git commit -m 'second commit index.html' index.html
+ 1020  git status 
+ 1021  git log --oneline
+ 1022  ls
+ 1023  ssh-keygen
+ 1024  cat /Users/divya/.ssh/id_rsa.pub
+(base) divya@Divyas-Air RepoSSH % git remote add origin git@github.com:srivasd1/SshRepo.git
+(base) divya@Divyas-Air RepoSSH % git remote -v
+origin	git@github.com:srivasd1/SshRepo.git (fetch)
+origin	git@github.com:srivasd1/SshRepo.git (push)
+(base) divya@Divyas-Air RepoSSH % git push origin master
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 38, done.
+Counting objects: 100% (38/38), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (38/38), 3.60 KiB | 1.80 MiB/s, done.
+Total 38 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To github.com:srivasd1/SshRepo.git
+ * [new branch]      master -> master
+
